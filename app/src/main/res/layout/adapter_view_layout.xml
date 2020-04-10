@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:descendantFocusability="blocksDescendants"
+    android:weightSum="100">
+
+    
+    <TextView
+        android:id="@+id/taskTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="8dp"
+        android:text="Task goes here!!!!"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_weight="100"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/doneButton"
+            android:layout_marginEnd="5dp"
+            android:alpha="0"
+            android:layout_gravity="center"
+            android:text=" " />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/imgCheckBox"
+            android:layout_marginEnd="5dp"
+            android:elevation="100dp"
+            android:src="@drawable/ic_check_box_black_24dp"/>
+    </FrameLayout>
+
+</LinearLayout>
+
+

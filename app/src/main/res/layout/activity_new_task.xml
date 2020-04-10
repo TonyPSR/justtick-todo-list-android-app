@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/TaskEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:focusable="true"
+        android:textColor="#000"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:elevation="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textCapSentences"
+        android:hint="Enter Task"
+        android:background="@drawable/edittext_fill"
+        android:layout_below="@+id/changeDateButton"
+        android:maxLines="1"
+        android:imeOptions="actionDone"/>
+
+
+    <TextView
+        android:id="@+id/toBeRemindedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:text="Remind me on"
+        android:layout_toStartOf="@id/changeDateButton"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_below="@+id/toBeRemindedTextView"
+        android:text="Apr 27, 1999"
+        android:layout_toStartOf="@id/changeDateButton"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/changeDateButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/toBeRemindedTextView"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/calendar_button_ripple"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>

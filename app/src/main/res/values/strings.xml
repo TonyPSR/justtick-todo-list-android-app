@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">JustTick</string>
+    <string name="charset">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY Z</string>
+</resources>

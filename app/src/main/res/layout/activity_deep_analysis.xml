@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg">
+
+    <TextView
+        android:id="@+id/activityDeepTaskTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="18sp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:text="Agenda goes here!!!!"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/snoozeDate"
+        android:layout_below="@id/doneOrNotRadioGroup"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/snoozeDate"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/doneOrNotRadioGroup"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/calendar_button_ripple"
+        android:backgroundTint="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/doneOrNotRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/activityDeepTaskTextView">
+
+        <RadioButton
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:buttonTint="@color/colorAccent"
+            android:text="DONE" />
+
+        <RadioButton
+            android:id="@+id/notDoneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:buttonTint="@color/colorAccent"
+            android:text="INCOMPLETE" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DateTextView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:text="DELETE"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/delete_button_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:text="Save"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:background="@drawable/save_button_ripple"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
